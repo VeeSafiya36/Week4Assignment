@@ -1,5 +1,5 @@
-// Question 1. a.):
-// create a function that subtracts the first element from the last element in a array
+//Question 1. a.
+console.log("*Question 1. a. create a function that subtracts the first element from the last element in a array")
 
 //created an array called ages
 let ages = [3,9,23,64,2,8,28,93]
@@ -17,7 +17,10 @@ console.log(ages[0]);
 let subtractedValue = (lastElement) - (firstElement);
 console.log(subtractedValue);
 
-// b.) add a new age to your array and repeat the step above
+console.log ("__________________________________________________")
+
+// Question 1. b.
+console.log("*b. add a new age to your array and repeat the step above")
 
 ages.push(15);
 console.log(ages);
@@ -28,7 +31,10 @@ console.log(lastElement);
 subtractedValue = (lastElement) - (firstElement);
 console.log(subtractedValue);
 
-// c.) Use a loop to iterate through the array and calculate average age
+console.log("________________________________________________")
+
+//Question 1. c.
+console.log("*c.) Use a loop to iterate through the array and calculate average age")
 
 // created a for loop to iterate through array and declared sum variable
 let sum = 0
@@ -39,11 +45,13 @@ sum += ages[i];
   var average = sum / ages.length;
   console.log(average);  
 
-   
- // Question 2. create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'
+  console.log("_____________________________________________")
+
+  //Question 2. a. 
+ console.log("*Question 2. create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'")
  let names = ['Sam','Tommy', 'Tim','Sally','Buck','Bob']    
 
- // a.) use a loop to iterate through the array and calculate the average number of letters per name
+ console.log("*a.) use a loop to iterate through the array and calculate the average number of letters per name")
 
  //created empty array amountOfLetters and created for loop to iterate through names array. Then I pushed the amount
  // of letters into the empty array
@@ -65,22 +73,33 @@ sum += ages[i];
     let newAverage = newSum / amountOfLetters.length;
     console.log(newAverage);
 
-    // b. use a loop to iterate through the array again and concatenate all the names together, separated by spaces
+    console.log("_________________________________________________")
+
+    //Question 2. b.
+    console.log("*b. use a loop to iterate through the array again and concatenate all the names together, separated by spaces")
     let string= ' ';
     for(let i = 0; i < names.length; i++) {
         string = string + names[i] + " "
     }
     console.log(string)
     
+    console.log("_________________________________________________")
 
-    // Question 3. How do you access the last element of any array?
-// array[array.length - 1]; is used to access the last element in an array
+    //Question 3.
+    console.log("*Question 3. How do you access the last element of any array?")
+    console.log("array[array.length - 1]; is used to access the last element in an array")
 
-    // Question 4. How do you access the first element of any array?
-    // array[0] is used to access the first element of any array.
+    console.log("________________________________________________")
 
-    // Question 5. Create a new array called nameLengths. Write a loop to iterate over the previously
-    // created names array and add the length of each name to the nameLengths array.
+    //Question 4.
+    console.log("*Question 4. How do you access the first element of any array?")
+    console.log("array[0] is used to access the first element of any array.")
+
+    console.log("_______________________________________________")
+
+    //Question 5.
+    console.log("*Question 5. Create a new array called nameLengths. Write a loop to iterate over the previously created one")
+     //created names array and add the length of each name to the nameLengths array.
     
     //declared new array and iterated over the previously created names array
     nameLengths = [];
@@ -92,8 +111,11 @@ sum += ages[i];
     nameLengths = [3, 5, 3, 5, 4, 3];
     console.log(nameLengths);
 
-    // Question 6. Write a loop to iterate over the nameLengths array and calculate the sum
-    // of all the elements in the array.
+    console.log("_______________________________________________")
+
+    //Question 6.
+    console.log("*Question 6. Write a loop to iterate over the nameLengths array and calculate the sum")
+    console.log("of all the elements in the array.")
 
     //declared arraySum variable and created for loop to iterate through array. Then, I set arraySum +1
     //equal to the sum of the elements in the array.
@@ -103,8 +125,11 @@ sum += ages[i];
     }
     console.log(arraySum);
 
-    // Question 7. Write a function that takes two parameters, word and n, as arguments and returns the word
-    //concatenated to itself n number of times.
+    console.log("_________________________________________________")
+
+    //Question 7.
+    console.log("*Question 7. Write a function that takes two parameters, word and n, as arguments and returns the word")
+    console.log("concatenated to itself n number of times.")
     
     let word = "";
     let n = 0
@@ -113,7 +138,10 @@ sum += ages[i];
     }
     wordMachine("Yay",3);
 
-    // Question 8. Write a function that takes two parameters, firstName and lastName, and returns a full name
+    console.log("________________________________________________")
+
+    //Question 8.
+    console.log("*Question 8. Write a function that takes two parameters, firstName and lastName, and returns a full name")
     //The full name should be the first and last name separated by a space.
     
     fullName = (firstName,lastName) => {
@@ -121,8 +149,11 @@ sum += ages[i];
     }
     fullName("Lisa","Bonn");
 
-    //9. Write a function that takes an array of numbers and returns if the sum of all the numbers
-    //in the array is greater than 100.
+    console.log("________________________________________________")
+
+    //Question 9.
+    console.log("*Question 9. Write a function that takes an array of numbers and returns if the sum of all the numbers")
+    console.log("in the array is greater than 100.")
 
     //created an array of numbers
     numbersArray = [5,12,15,20,37,18,59]
@@ -141,9 +172,12 @@ sum += ages[i];
    }
    console.log(addingMachine(numbersArray))
 
+   console.log("______________________________________________")
 
-    //Question 10. Write a function that takes an array of numbers and returns the average of all the
-    //elements in that array
+
+   //Question 10. 
+   console.log("*Question 10. Write a function that takes an array of numbers and returns the average of all the")
+    console.log("elements in that array")
     
    //created an array of numbers
    myNumbers = [3,5,15,9,22,11,44,55]
@@ -161,7 +195,10 @@ sum += ages[i];
    }
     console.log(averageMachine(myNumbers));
 
-    //Question 11. Write a function that takes two arrays of numbers and returns true if the average
+   console.log("_______________________________________________")
+
+    //Question 11.
+    console.log("*Question 11. Write a function that takes two arrays of numbers and returns true if the average")
     //of the elements in the first array is greater than the average of the elements in the second array.
 
     //created two number arrays
@@ -192,8 +229,11 @@ sum += ages[i];
    }
    console.log(compare2Averages(array1Average,array2Average))
 
-   //12. Write a function willBuyDrink that takes a boolean isHotOutside and a number moneyInPocket,
-   //and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+   console.log("_________________________________________________")
+
+   //Question 12.
+   console.log("*12. Write a function willBuyDrink that takes a boolean isHotOutside and a number moneyInPocket,")
+   console.log("and returns true if it is hot outside and if moneyInPocket is greater than 10.50.")
 
    //created a function with isHotOutside and moneyInPocket that returns true if isHotOutside
    //and moneyInPocket is greater than 10.50
@@ -206,15 +246,18 @@ sum += ages[i];
    }
    console.log(willBuyDrink(true,12));
 
-  // 13. Create a function of your own that solves a problem. In comments, write what the function does
-  // and why you created it.
+   console.log("_______________________________________________")
+
+  //Question 13.
+   console.log("*13. Create a function of your own that solves a problem. In comments, write what the function does")
+  console.log("and why you created it.")
   
   //This function takes in an amount of money in the bank and amount of money spent. It gives the
   //percentage of money spent. This was created as a quick way to see the percentage of money being spent.
 
   let percentSpent = 0;
-  percentOfMoneySpent = (moneyInBank,moneySpent)=> {
-    percentSpent = moneyInBank/ moneySpent
+  percentOfMoneySpent = (moneySpent,moneyInBank)=> {
+    percentSpent = moneySpent/ moneyInBank
     return percentSpent;
   }
-    console.log(percentOfMoneySpent(555,2000));
+    console.log(percentOfMoneySpent(100,5000));
